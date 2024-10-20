@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Benim Web Sitem</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+        /* Üst bilgi kısmı (header) */
+        header {
+            background-color: #664caf;
+            padding: 10px;
+            text-align: center;
+            color: white;
+        }
+        /* Menü (nav) */
+        nav {
+            display: flex;
+            justify-content: center;
+            background-color: #333;
+        }
+        nav a {
+            padding: 14px 20px;
+            display: block;
+            color: white;
+            text-align: center;
+            text-decoration: none;
+        }
+        nav a:hover {
+            background-color: #ddd;
+            color: black;
+        }
+        /* İçerik bölümleri (section) */
+        section {
+            padding: 20px;
+            margin: 10px;
+        }
+        /* Alt bilgi (footer) */
+        footer {
+            background-color:white;
+            color: black;
+            text-align: center;
+            padding: 1px;
+            position: fixed;
+            width: 100%;
+            bottom: 0;
+        }
+    </style>
+</head>
+<body>
+
+<!-- Üst bilgi kısmı -->
+<header>
+    <h1>Web Siteme Hoş Geldiniz</h1>
+</header>
+
+<!-- Navigasyon menüsü -->
+<nav>
+    <a href="#home">Ana Sayfa</a>
+    <a href="#projects">Projeler</a>
+    <a href="#contact">İletişim</a>
+    <a href="#survey">Anket</a>
+</nav>
+
+<!-- Ana Sayfa Bölümü -->
+<section id="home">
+    <h2>Ana Sayfa</h2>
+    <p>Merhaba Ben Muhammet Alperen Elbir Düzce üniversitesi bilgisayar mühendisi öğrencisiyim. Burası bir BMG projesidir.İlk projem olduğu için hatalarım olabilir.Görüş ve önerileriniz önemlidir.</p>
+</section>
+
+<!-- Projeler Bölümü -->
+<section id="projects">
+    <h2>Projeler</h2>
+    <p>Bu işte daha yeniyim daha sonra eklenilecektir.</p>
+    <img src="a computer learning to code.jpg" alt="Açıklayıcı metin" width="200" height="200">
+</section>
+
+<!-- İletişim Bölümü -->
+<section id="contact">
+    <h2>İletişim</h2>
+    <p>Ben Muhammet Alperen Elbir.</p>
+    <p>Eğer benimle iletişime geçmek isterseniz, lütfen aşağıdaki formu kullanın.</p>
+    <form>
+        <label for="name">Ad:</label><br>
+        <input type="text" id="name" name="name"><br>
+        <label for="email">E-posta:</label><br>
+        <input type="email" id="email" name="email"><br>
+        <input type="submit" value="Gönder">
+    </form>
+</section>
+
+<!-- Anket Bölümü -->
+<section id="survey">
+    <h1><strong>Anket</strong></h1>
+    <h2>Soru 1</h2>
+    <p>Görüşlerinizi duymak isteriz! Lütfen aşağıdaki anketi doldurun.</p>
+    <form>
+        <label for="rating">Web sitemizi nasıl değerlendirirsiniz?</label><br>
+        <select id="rating" name="rating">
+            <option value="excellent">Çok iyi</option>
+            <option value="good">İyidir</option>
+            <option value="average">Sıradan</option>
+            <option value="poor">Daha yolun başındasın evlat</option>
+        </select><br>
+        <input type="submit" value="Gönder">
+    </form>
+    <h3>Soru 2</h3>
+    <p>Görüşlerinizi duymak isteriz! Lütfen aşağıdaki anketi doldurun.</p>
+    <form>
+        <label for="rating">Hangi takımlısınız?</label><br>
+        <select id="rating" name="rating">
+            <option value="excellent">Galatasaray</option>
+            <option value="good">Beşiktaş</option>
+            <option value="average">Fenerbahçe</option>
+            <option value="poor">Trabzonspor</option>
+        </select><br>
+        <input type="submit" value="Gönder">
+    </form>
+    <h4>Soru 3</h3>
+    <p>Görüşlerinizi duymak isteriz! Lütfen aşağıdaki anketi doldurun.</p>
+    <form>
+        <label for="rating">Düzceyi nasıl buldunuz?</label><br>
+        <select id="rating" name="rating">
+            <option value="excellent">Tam bana göre</option>
+            <option value="good">Sakin bir şehir</option>
+            <option value="average">Sıkıcı bir şehir</option>
+            <option value="poor">Welcome to hell</option>
+        </select><br>
+        <input type="submit" value="Gönder"><br><br><br>
+    </form>
+    <form action="/submit_suggestion" method="post">
+        <label for="suggestion">Görüş ve Önerileriniz:</label><br>
+        <textarea id="suggestion" name="suggestion" rows="4" cols="50" placeholder="Görüşlerinizi buraya yazın..."></textarea><br><br>
+        <input type="submit" value="Gönder">
+      </form>
+</section>
+
+<!-- Alt bilgi -->
+<footer>
+    <p>© 2024 Benim Web Sitem. Tüm hakları saklıdır.</p>
+</footer>
+
+</body>
+</html>
